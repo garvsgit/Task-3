@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Task-3</title>
+</head>
+
+<body>
+    <div class="heading">String Analyser</div>
+    <div class="description">
+        This analyser will help you to count vowel, consonent, special characters, spaces and numbers in given string
+    </div>
+    <div class="input">
+        <form  onsubmit="return false">
+            <div class="header">Enter your text here :</div>
+            <input type="text" placeholder="Type here ..." id="stringinput"><br>
+            <button id="button" onclick="analyse()">Analyse</button>
+        </form>
+    </div>
+    <div class="output">
+        <span class="header">Given input: </span>
+        <span id="given-input"></span>
+        <div class="info">
+            <div class="member">Vowels : <span id="vowels"></span></div>
+            <div class="member">Consonants : <span id="consonants"></span></div>
+            <div class="member">Digits : <span id="digits"></span></div>
+            <div class="member">Spaces : <span id="spaces"></span></div>
+            <div class="member">Special characters : <span id="specialCharacters"></span></div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
